@@ -1,0 +1,128 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* Reset */
+body {
+	background: #FFF0EA !important;
+}
+/* Reset */
+
+/* Heander */
+label {
+    clear: both;
+    display: block !important;
+}
+
+header.header h2 {
+  font-family: Arial, sans-serif;
+  font-size: 32px;
+  font-weight: bold;
+  color: #1b1b1b;
+  text-align: center;
+  padding: 20px;
+  border-radius: 5px;
+}
+/* Heander */
+
+/* Conteúdo */
+.conteudo-vsl {
+    clear: both;
+    width: 65%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    
+    
+ }
+.video {
+    clear: both;
+    display: block;
+    width: 100%;
+    margin: 0 auto 15px auto;
+}
+
+
+a.cta {
+    clear: both;
+    text-align: center;
+    background: #ff9817;
+    color: #ffffff !important;
+    font-size: 25px;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 1em 3em;    
+    width: 50%;
+    margin: 40px 10px;
+    border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+}
+.pulsar {
+    animation-name: pulse;
+    -webkit-animation-name: pulse;
+    animation-duration: 1.5s;
+    -webkit-animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+}
+@keyframes pulse{
+0%,100%{transform:scale(.9);opacity:.9;}
+50%{transform:scale(1);opacity:1;}
+}
+@-webkit-keyframes pulse{
+0%,100%{-webkit-transform:scale(.95);opacity:.7}
+50%{-webkit-transform:scale(1);opacity:1}
+}
+
+
+/* Footer */
+footer.footer {
+	background: #1b1b1b;
+	padding: 80px 400px 80px 400px;
+}
+footer.footer p {
+  line-height: 24px;
+  font-weight: 400;
+  text-align: center;
+  font-size: 11px;
+  font-family: Mulish, sans-serif;
+  color: #b3b1b1;
+}
+
+/* Footer */
+
+/* Responsivo */
+@media (max-width: 700px) {
+	body {
+		background: #FFF0EA !important;
+		background-attachment: fixed !important;
+	}
+	section.faixa {
+		background: red;
+		padding: 10px 0;
+		margin: 0 auto 35px auto;
+	}
+	label {
+		clear: both;
+		display: block;
+	}
+	header.header h2 {
+		font-size: 17px;
+  }
+	.conteudo-vsl {
+		width: 100%;
+	}
+	a.cta {
+		width: 100%;
+		font-size: 20px;
+		padding: 20px 0;
+	}
+	footer.footer {
+		margin-top: 250px;
+    padding: 20px;
+	}	
+}
+/* Responsivo */
